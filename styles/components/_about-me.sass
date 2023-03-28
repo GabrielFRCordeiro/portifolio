@@ -1,0 +1,78 @@
+@import ../abstract/_fonts.sass
+
+.about-me
+    display: grid
+    grid-template-areas: 'picture text'
+    justify-content: space-evenly
+    grid-column-gap: 16px
+    margin: 16px
+
+    &__picture
+        height: 128px
+        grid-area: picture
+        border-radius: 10px
+
+    &__text
+        grid-area: text
+        display: grid
+        grid-template-rows: 35% 55% 10%
+        margin-top: 1%
+
+        &__heading
+            color: $compliment
+            font-family: 'Hind'
+            font-size: 1.5em
+            text-align: center
+        
+        &__summary
+            color: $compliment
+            font-family: 'Hind'
+            font-size: .7em
+            font-weight: 500
+        
+        &__click
+            text-decoration: none
+
+            &__more
+                color: $accent
+                font-family: 'Hind'
+                font-size: .6em
+                text-align: end
+
+@media screen and (min-width: 480px)
+    .about-me__picture
+        height: 226px
+
+    .about-me__text
+    
+        &__heading
+            font-size: 2.5em
+
+        &__summary
+            font-size: 1.3em
+
+        &__click__more
+            font-size: .7em
+
+@media screen and (min-width: 600px)
+    .about-me
+        margin: 16px 64px
+
+@media screen and (min-width: 800px)
+    .about-me
+        margin: 32px 128px
+
+@media screen and (min-width: 992px)
+    .about-me__picture
+        height: 388px
+
+    .about-me__text
+    
+        &__heading
+            font-size: 3.5em
+
+        &__summary
+            font-size: 2em
+
+        &__click__more
+            font-size: 1em

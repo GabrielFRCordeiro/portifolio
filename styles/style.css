@@ -1,3 +1,9 @@
+body {
+  background-color: rgba(0, 138, 195, 0.1);
+  width: 100vw;
+  min-height: 100vh;
+}
+
 .banner {
   height: 64px;
   display: flex;
@@ -32,5 +38,87 @@
   }
   .banner__logo__icon, .banner__social-media__icon {
     height: 96px;
+  }
+}
+@font-face {
+  font-family: "Hind";
+  src: url(../../fonts/Hind-Light.ttf);
+}
+.about-me {
+  display: grid;
+  grid-template-areas: "picture text";
+  justify-content: space-evenly;
+  grid-column-gap: 16px;
+  margin: 16px;
+}
+.about-me__picture {
+  height: 128px;
+  grid-area: picture;
+  border-radius: 10px;
+}
+.about-me__text {
+  grid-area: text;
+  display: grid;
+  grid-template-rows: 35% 55% 10%;
+  margin-top: 1%;
+}
+.about-me__text__heading {
+  color: #002A59;
+  font-family: "Hind";
+  font-size: 1.5em;
+  text-align: center;
+}
+.about-me__text__summary {
+  color: #002A59;
+  font-family: "Hind";
+  font-size: 0.7em;
+  font-weight: 500;
+}
+.about-me__text__click {
+  text-decoration: none;
+}
+.about-me__text__click__more {
+  color: #E89B25;
+  font-family: "Hind";
+  font-size: 0.6em;
+  text-align: end;
+}
+
+@media screen and (min-width: 480px) {
+  .about-me__picture {
+    height: 226px;
+  }
+  .about-me__text__heading {
+    font-size: 2.5em;
+  }
+  .about-me__text__summary {
+    font-size: 1.3em;
+  }
+  .about-me__text__click__more {
+    font-size: 0.7em;
+  }
+}
+@media screen and (min-width: 600px) {
+  .about-me {
+    margin: 16px 64px;
+  }
+}
+@media screen and (min-width: 800px) {
+  .about-me {
+    margin: 32px 128px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .about-me__picture {
+    height: 388px;
+  }
+  .about-me__text__heading {
+    font-size: 3.5em;
+  }
+  .about-me__text__summary {
+    font-size: 2em;
+  }
+  .about-me__text__click__more {
+    font-size: 1em;
   }
 }/*# sourceMappingURL=style.css.map */
