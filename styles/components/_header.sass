@@ -1,0 +1,33 @@
+@import ../abstract/_variables.sass
+
+.banner
+    height: 64px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 0 16px
+    background-color: $compliment
+    box-shadow: 0px -1px 10px 3px #000000
+
+    &__social-media
+        display: flex
+        column-gap: 16px
+
+    &__logo__icon, &__social-media__icon
+        height: 32px
+
+@media screen and (min-width: 480px)
+    .banner
+        height: 96px
+        padding: 0 32px
+
+    .banner__logo__icon, .banner__social-media__icon
+        height: 64px
+
+@media screen and (min-width: 992px)
+    .banner
+        height: 128px
+        padding: 0 32px
+
+    .banner__logo__icon, .banner__social-media__icon
+        height: 96px
