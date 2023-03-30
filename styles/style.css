@@ -1,6 +1,6 @@
 body {
   background-color: rgba(0, 138, 195, 0.1);
-  width: 100vw;
+  max-width: 100vw;
   min-height: 100vh;
 }
 
@@ -51,6 +51,16 @@ body {
   grid-column-gap: 16px;
   margin: 16px;
 }
+@media screen and (min-width: 600px) {
+  .about-me {
+    margin: 16px 64px;
+  }
+}
+@media screen and (min-width: 800px) {
+  .about-me {
+    margin: 32px 128px;
+  }
+}
 .about-me__picture {
   height: 128px;
   grid-area: picture;
@@ -98,16 +108,6 @@ body {
     font-size: 0.7em;
   }
 }
-@media screen and (min-width: 600px) {
-  .about-me {
-    margin: 16px 64px;
-  }
-}
-@media screen and (min-width: 800px) {
-  .about-me {
-    margin: 32px 128px;
-  }
-}
 @media screen and (min-width: 992px) {
   .about-me__picture {
     height: 388px;
@@ -120,5 +120,32 @@ body {
   }
   .about-me__text__click__more {
     font-size: 1em;
+  }
+}
+.skills-and-certificates__skills {
+  display: grid;
+  grid-template-areas: "one two three";
+  justify-content: space-evenly;
+  padding: 16px 32px;
+  grid-row-gap: 32px;
+}
+.skills-and-certificates__skills__logos {
+  height: 3em;
+  width: 3em;
+}
+.skills-and-certificates__certificates__img {
+  height: 10em;
+}
+
+@media screen and (min-width: 480px) {
+  .skills-and-certificates__skills__logos {
+    height: 4em;
+    width: 4em;
+  }
+}
+@media screen and (min-width: 992px) {
+  .skills-and-certificates {
+    display: grid;
+    grid-template-areas: "skills certificates";
   }
 }/*# sourceMappingURL=style.css.map */

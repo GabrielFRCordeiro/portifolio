@@ -16,18 +16,19 @@
     &__logo__icon, &__social-media__icon
         height: 32px
 
-@media screen and (min-width: 480px)
-    .banner
-        height: 96px
-        padding: 0 32px
+@media screen
+    @media (min-width: $small-break)
+        .banner
+            height: 96px
+            padding: 0 32px
 
-    .banner__logo__icon, .banner__social-media__icon
-        height: 64px
+        .banner__logo__icon, .banner__social-media__icon
+            height: 64px
+    
+    @media (min-width: $large-break)
+        .banner
+            height: 128px
+            padding: 0 32px
 
-@media screen and (min-width: 992px)
-    .banner
-        height: 128px
-        padding: 0 32px
-
-    .banner__logo__icon, .banner__social-media__icon
-        height: 96px
+        .banner__logo__icon, .banner__social-media__icon
+            height: 96px

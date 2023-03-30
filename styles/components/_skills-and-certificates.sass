@@ -1,0 +1,28 @@
+@import ../abstract/_variables.sass
+
+.skills-and-certificates
+    &__skills
+        display: grid
+        grid-template-areas: 'one two three'
+        justify-content: space-evenly
+        padding: 16px 32px
+        grid-row-gap: 32px
+
+        &__logos
+            height: 3em
+            width: 3em
+    
+    &__certificates
+        &__img
+            height: 10em
+
+@media screen
+    @media (min-width: $small-break)
+        .skills-and-certificates__skills__logos
+            height: 4em
+            width: 4em
+    
+    @media (min-width: $large-break)
+        .skills-and-certificates
+            display: grid
+            grid-template-areas: 'skills certificates'

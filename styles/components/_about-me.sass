@@ -1,4 +1,5 @@
 @import ../abstract/_fonts.sass
+@import ../abstract/_variables.sass
 
 .about-me
     display: grid
@@ -6,6 +7,13 @@
     justify-content: space-evenly
     grid-column-gap: 16px
     margin: 16px
+
+    @media screen
+        @media (min-width: 600px)
+            margin: 16px 64px
+        
+        @media (min-width: 800px)
+            margin: 32px 128px
 
     &__picture
         height: 128px
@@ -39,40 +47,33 @@
                 font-size: .6em
                 text-align: end
 
-@media screen and (min-width: 480px)
-    .about-me__picture
-        height: 226px
+@media screen
+    @media (min-width: $small-break)
+        .about-me__picture
+            height: 226px
 
-    .about-me__text
+        .about-me__text
     
-        &__heading
-            font-size: 2.5em
+            &__heading
+                font-size: 2.5em
 
-        &__summary
-            font-size: 1.3em
+            &__summary
+                font-size: 1.3em
 
-        &__click__more
-            font-size: .7em
-
-@media screen and (min-width: 600px)
-    .about-me
-        margin: 16px 64px
-
-@media screen and (min-width: 800px)
-    .about-me
-        margin: 32px 128px
-
-@media screen and (min-width: 992px)
-    .about-me__picture
-        height: 388px
-
-    .about-me__text
+            &__click__more
+                font-size: .7em
     
-        &__heading
-            font-size: 3.5em
+    @media (min-width: $large-break)
+        .about-me__picture
+            height: 388px
 
-        &__summary
-            font-size: 2em
+        .about-me__text
+    
+            &__heading
+                font-size: 3.5em
 
-        &__click__more
-            font-size: 1em
+            &__summary
+                font-size: 2em
+
+            &__click__more
+                font-size: 1em
