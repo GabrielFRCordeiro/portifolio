@@ -146,6 +146,85 @@ body {
 @media screen and (min-width: 992px) {
   .skills-and-certificates {
     display: grid;
-    grid-template-areas: "skills certificates";
+    grid-template-columns: 50% 50%;
   }
+}
+.certificates-carousel {
+  width: calc(100vw - 32px);
+  height: calc((100vw - 32px) * 0.75);
+  overflow: hidden;
+  position: relative;
+  margin: auto;
+}
+.certificates-carousel__inner {
+  display: flex;
+  position: absolute;
+  left: 0;
+  transition: left 0.25s ease-out;
+}
+.certificates-carousel__inner img {
+  width: calc(100vw - 32px);
+  height: calc((100vw - 32px) * 0.75);
+}
+@media screen and (min-width: 992px) {
+  .certificates-carousel {
+    width: calc(50vw - 96px);
+    height: calc((50vw - 96px) * 0.75);
+  }
+  .certificates-carousel img {
+    width: calc(50vw - 96px);
+    height: calc((50vw - 96px) * 0.75);
+  }
+}
+.certificates-carousel__bubbles {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-bottom: 5px;
+}
+.certificates-carousel__bubbles .bubble {
+  margin: 2.5px;
+  background-color: #E89B25;
+  border-radius: 100000px;
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  opacity: 0.25;
+  transition: opacity 0.1s linear;
+  cursor: pointer;
+}
+.certificates-carousel__bubbles .bubble:hover {
+  opacity: 0.65;
+}
+.certificates-carousel__bubbles .bubble.active {
+  opacity: 1;
+}
+.certificates-carousel__next::after, .certificates-carousel__previous::after {
+  content: ">";
+  position: absolute;
+  top: 50%;
+  right: 1.5%;
+  background-color: #E89B25;
+  font-size: 20px;
+  width: 1em;
+  height: 3em;
+  font-weight: bold;
+  font-family: sans-serif;
+  transform: translateY(-50%);
+  line-height: 3em;
+  box-sizing: border-box;
+  padding: 0 0.2em;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: opacity 0.1s linear;
+}
+.certificates-carousel__next:hover::after, .certificates-carousel__previous:hover::after {
+  opacity: 1;
+}
+.certificates-carousel__previous::after {
+  content: "<";
+  left: 1.5%;
 }/*# sourceMappingURL=style.css.map */
