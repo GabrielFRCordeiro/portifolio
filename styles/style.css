@@ -69,8 +69,9 @@ body {
 .about-me__text {
   grid-area: text;
   display: grid;
-  grid-template-rows: 35% 55% 10%;
+  grid-template-rows: 30% 60% 10%;
   margin-top: 1%;
+  letter-spacing: 1px;
 }
 .about-me__text__heading {
   color: #002A59;
@@ -252,4 +253,76 @@ body {
 .certificates-carousel__previous::after {
   content: "<";
   left: 1.5%;
+}
+
+.contact-me {
+  min-height: 80vh;
+  position: absolute;
+  width: 100%;
+  background-color: #002A59;
+  color: #008AC3;
+  margin-top: 16px;
+  box-shadow: 0px 1px 10px 3px #000000;
+}
+.contact-me__heading {
+  font-family: "Hind";
+  font-size: 2em;
+  padding: 16px;
+  letter-spacing: 1px;
+}
+.contact-me__summary {
+  font-family: "Hind";
+  font-size: 1em;
+  padding: 0 0 16px 16px;
+  letter-spacing: 1px;
+}
+.contact-me__label, .contact-me__input, .contact-me__button {
+  font-family: "Hind";
+  display: block;
+  margin: 16px;
+  letter-spacing: 1px;
+}
+.contact-me__label {
+  font-size: 1.5em;
+}
+.contact-me__input {
+  width: 15em;
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 32px;
+  padding: 8px;
+}
+.contact-me__input#message {
+  height: 15em;
+  resize: none;
+}
+@media screen and (min-width: 600px) {
+  .contact-me__input#message {
+    width: 20em;
+  }
+}
+.contact-me__input::-moz-placeholder {
+  opacity: 50%;
+  letter-spacing: 1px;
+}
+.contact-me__input::placeholder {
+  opacity: 50%;
+  letter-spacing: 1px;
+}
+.contact-me__input:focus {
+  outline: none;
+}
+.contact-me__button {
+  background-color: #E89B25;
+  color: #008AC3;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  width: 216px;
+}
+@media screen and (min-width: 600px) {
+  .contact-me__button {
+    width: 282px;
+  }
 }/*# sourceMappingURL=style.css.map */
