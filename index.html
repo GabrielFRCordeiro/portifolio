@@ -64,9 +64,18 @@
         <label for="message" class="contact-me__label">Message:</label>
         <textarea name="message" id="message" cols="40" rows="5" placeholder="Write what you want me to do for you and your project!" required class="contact-me__input" maxlength="254"></textarea>
 
-        <input type="button" value="SEND" class="contact-me__button">
+        <input type="button" value="SEND" class="contact-me__button" id="button">
     </form>
 
     <script src="js/certificates-carousel.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("Qyxr91oFJmWWrzIsN");
+        })();
+    </script>
+    <script src="js/send-email.js"></script>
 </body>
 </html>
