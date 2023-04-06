@@ -10,19 +10,35 @@ button.addEventListener('click', () => {
     const templateID = "template_yomaqlf";
     const publicKey = "Qyxr91oFJmWWrzIsN";
     
-    const validateForm = (params.name && params.email && params.message);
+    const validForm = (params.name && params.email && params.message);
 
-    if (validateForm) {
+    if (validForm) {
         emailjs.send(serviceID, templateID, params, publicKey)
         .then((res) => {
             document.querySelector('#name').value = '';
             document.querySelector('#email').value = '';
             document.querySelector('#message').value = '';
             console.log(res);
-            alert('Your message sent successfully!');
+            let emailSent = `Your message sent successfully!`;
+            notifyUser(emailSent);
         })
         .catch((err) => console.log(err));
     } else {
-        alert('Please, fill in the form with all the data');
+        let formIncomplete = `Please, fill in the form with all the data.`;
+        notifyUser(formIncomplete);
     };
 });
+
+function notifyUser(situation) {
+    let notification = document.createElement('div');
+    notification.classList.add('notification');
+    notification.innerHTML = `<p class='notification__message'>${situation}</p>
+    <button class='notification__ok' onclick='removeNotification()'>OK</button>`;
+    const form = document.querySelector('.contact-me');
+    form.appendChild(notification);
+}
+
+function removeNotification() {
+    let notification = document.querySelector('.notification');
+    notification.remove();
+};
