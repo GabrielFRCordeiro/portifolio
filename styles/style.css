@@ -6,12 +6,12 @@ body {
 
 .banner {
   height: 64px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   padding: 0 16px;
   background-color: #002A59;
   box-shadow: 0px -1px 10px 3px #000000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .banner__social-media {
   display: flex;
@@ -45,11 +45,11 @@ body {
   src: url(../../fonts/Hind-Light.ttf);
 }
 .about-me {
+  margin: 16px;
   display: grid;
   grid-template-areas: "picture text";
-  justify-content: space-evenly;
   grid-column-gap: 16px;
-  margin: 16px;
+  justify-content: space-evenly;
 }
 @media screen and (min-width: 600px) {
   .about-me {
@@ -62,36 +62,36 @@ body {
   }
 }
 .about-me__picture {
-  height: 128px;
   grid-area: picture;
+  height: 128px;
   border-radius: 10px;
 }
 .about-me__text {
   grid-area: text;
-  display: grid;
-  grid-template-rows: 30% 60% 10%;
   margin-top: 1%;
   letter-spacing: 1px;
+  display: grid;
+  grid-template-rows: 30% 60% 10%;
 }
 .about-me__text__heading {
-  color: #002A59;
-  font-family: "Hind";
   font-size: 1.5em;
+  font-family: "Hind";
+  color: #002A59;
   text-align: center;
 }
 .about-me__text__summary {
-  color: #002A59;
-  font-family: "Hind";
   font-size: 0.7em;
   font-weight: 500;
+  font-family: "Hind";
+  color: #002A59;
 }
 .about-me__text__click {
   text-decoration: none;
 }
 .about-me__text__click__more {
-  color: #E89B25;
-  font-family: "Hind";
   font-size: 0.6em;
+  font-family: "Hind";
+  color: #E89B25;
   text-align: end;
 }
 
@@ -127,23 +127,23 @@ body {
   margin: 32px 0;
 }
 .skills-and-certificates__skills {
-  display: grid;
-  grid-template-areas: "one two three";
-  justify-content: space-evenly;
   padding: 16px 32px;
-  grid-row-gap: 32px;
-  align-items: center;
   margin-bottom: 32px;
   position: relative;
+  display: grid;
+  grid-template-areas: "one two three";
+  grid-row-gap: 32px;
+  justify-content: space-evenly;
+  align-items: center;
 }
 .skills-and-certificates__skills::before {
   content: "My skills";
   position: absolute;
   top: -1%;
   right: calc(50vw - 28px);
-  color: #002A59;
-  font-family: "Hind";
   font-size: 1em;
+  font-family: "Hind";
+  color: #002A59;
 }
 @media screen and (min-width: 992px) {
   .skills-and-certificates__skills::before {
@@ -176,11 +176,11 @@ body {
   }
 }
 .certificates-carousel {
-  width: calc(100vw - 32px);
   height: calc((100vw - 32px) * 0.75);
-  overflow: hidden;
+  width: calc(100vw - 32px);
   position: relative;
   margin: auto;
+  overflow: hidden;
 }
 .certificates-carousel__inner {
   display: flex;
@@ -194,32 +194,32 @@ body {
 }
 @media screen and (min-width: 992px) {
   .certificates-carousel {
-    width: calc(50vw - 96px);
     height: calc((50vw - 96px) * 0.75);
+    width: calc(50vw - 96px);
   }
   .certificates-carousel img {
-    width: calc(50vw - 96px);
     height: calc((50vw - 96px) * 0.75);
+    width: calc(50vw - 96px);
   }
 }
 .certificates-carousel__bubbles {
+  margin-bottom: 5px;
   display: flex;
-  justify-content: center;
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
-  margin-bottom: 5px;
+  justify-content: center;
 }
 .certificates-carousel__bubbles .bubble {
-  margin: 2.5px;
-  background-color: #E89B25;
-  border-radius: 100000px;
-  width: 10px;
   height: 10px;
-  display: inline-block;
+  width: 10px;
+  margin: 2.5px;
+  border-radius: 100000px;
   opacity: 0.25;
   transition: opacity 0.1s linear;
+  display: inline-block;
+  background-color: #E89B25;
   cursor: pointer;
 }
 .certificates-carousel__bubbles .bubble:hover {
@@ -233,19 +233,19 @@ body {
   position: absolute;
   top: 50%;
   right: 1.5%;
-  background-color: #E89B25;
-  font-size: 20px;
-  width: 1em;
   height: 3em;
-  font-weight: bold;
-  font-family: sans-serif;
-  transform: translateY(-50%);
-  line-height: 3em;
-  box-sizing: border-box;
+  width: 1em;
   padding: 0 0.2em;
-  cursor: pointer;
   opacity: 0.5;
   transition: opacity 0.1s linear;
+  transform: translateY(-50%);
+  line-height: 3em;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: sans-serif;
+  background-color: #E89B25;
+  box-sizing: border-box;
+  cursor: pointer;
 }
 .certificates-carousel__next:hover::after, .certificates-carousel__previous:hover::after {
   opacity: 1;
@@ -262,38 +262,38 @@ body {
 .contact-me {
   position: absolute;
   width: 100%;
+  margin-top: 16px;
   background-color: #002A59;
   color: #008AC3;
-  margin-top: 16px;
   box-shadow: 0px 1px 10px 3px #000000;
 }
 .contact-me__heading {
-  font-family: "Hind";
-  font-size: 2em;
   padding: 16px;
   letter-spacing: 1px;
+  font-size: 2em;
+  font-family: "Hind";
 }
 .contact-me__summary {
-  font-family: "Hind";
-  font-size: 1em;
   padding: 0 0 16px 16px;
   letter-spacing: 1px;
+  font-size: 1em;
+  font-family: "Hind";
 }
 .contact-me__label, .contact-me__input, .contact-me__button {
-  font-family: "Hind";
   display: block;
   margin: 16px;
   letter-spacing: 1px;
+  font-family: "Hind";
 }
 .contact-me__label {
   font-size: 1.5em;
 }
 .contact-me__input {
   width: 15em;
+  padding: 8px;
+  margin-bottom: 32px;
   border: none;
   border-radius: 10px;
-  margin-bottom: 32px;
-  padding: 8px;
 }
 .contact-me__input#message {
   height: 15em;
@@ -316,13 +316,13 @@ body {
   outline: none;
 }
 .contact-me__button {
-  background-color: #E89B25;
-  color: #008AC3;
+  width: 216px;
   border: none;
   border-radius: 5px;
   font-size: 1em;
+  background-color: #E89B25;
+  color: #008AC3;
   cursor: pointer;
-  width: 216px;
 }
 @media screen and (min-width: 600px) {
   .contact-me__button {
@@ -331,36 +331,36 @@ body {
 }
 
 .notification {
-  position: relative;
-  background-color: #fff;
-  color: #002A59;
   width: 50vw;
   height: 25vh;
   padding: 16px;
-  text-align: center;
-  border-radius: 5px;
+  margin-bottom: -25vh;
+  position: relative;
   left: 25%;
   bottom: calc(55vh + 32px);
-  margin-bottom: -25vh;
+  box-sizing: border-box;
+  border: 2px solid #008AC3;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #002A59;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  box-sizing: border-box;
-  border: 2px solid #008AC3;
+  text-align: center;
 }
 .notification__message {
-  font-family: "Hind";
-  font-size: 1em;
   letter-spacing: 1px;
+  font-size: 1em;
+  font-family: "Hind";
 }
 .notification__ok {
+  height: 26px;
   width: 52px;
-  align-self: center;
   border: none;
   border-radius: 5px;
-  height: 26px;
   background-color: #E89B25;
   color: #002A59;
+  align-self: center;
   cursor: pointer;
 }
 @media screen and (min-width: 480px) {
@@ -374,26 +374,26 @@ body {
 }
 
 .my-history {
+  letter-spacing: 1px;
   font-family: "Hind";
   color: #002A59;
-  letter-spacing: 1px;
 }
 .my-history__heading {
-  text-align: center;
-  font-size: 2em;
   margin: 16px;
+  font-size: 2em;
+  text-align: center;
 }
 .my-history__paragraph {
-  font-size: 1em;
   margin: 16px;
+  font-size: 1em;
 }
 @media screen and (min-width: 480px) {
   .my-history__heading {
-    font-size: 3em;
     margin: 32px;
+    font-size: 3em;
   }
   .my-history__paragraph {
-    font-size: 2em;
     margin: 32px;
+    font-size: 2em;
   }
 }/*# sourceMappingURL=style.css.map */

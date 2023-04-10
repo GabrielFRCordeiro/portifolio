@@ -1,26 +1,24 @@
-@import ../abstract/_variables.sass
-
 .skills-and-certificates
     margin: 32px 0
 
     &__skills
-        display: grid
-        grid-template-areas: 'one two three'
-        justify-content: space-evenly
         padding: 16px 32px
-        grid-row-gap: 32px
-        align-items: center
         margin-bottom: 32px
         position: relative
+        display: grid
+        grid-template-areas: 'one two three'
+        grid-row-gap: 32px
+        justify-content: space-evenly
+        align-items: center
 
         &::before
             content: "My skills"
             position: absolute
             top: -1%
             right: calc(50vw - 28px)
-            color: $compliment
-            font-family: 'Hind'
             font-size: 1em
+            font-family: 'Hind'
+            color: $compliment
 
             @media screen and (min-width: $large-break)
                 top: 0

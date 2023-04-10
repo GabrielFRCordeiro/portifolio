@@ -1,9 +1,9 @@
 .certificates-carousel
-    width: $width
     height: $height
-    overflow: hidden
+    width: $width
     position: relative
     margin: auto
+    overflow: hidden
 
     &__inner
         display: flex
@@ -16,31 +16,31 @@
             height: $height
 
     @media screen and (min-width: $large-break)
-        width: $large-width
         height: $large-height
+        width: $large-width
 
         img
-            width: $large-width
             height: $large-height
+            width: $large-width
 
     &__bubbles
+        margin-bottom: 5px
         display: flex
-        justify-content: center
         position: absolute
         bottom: 0
         left: 0
         right: 0
-        margin-bottom: 5px
+        justify-content: center
 
         .bubble
-            margin: 2.5px
-            background-color: $accent
-            border-radius: 100000px
-            width: 10px
             height: 10px
-            display: inline-block
+            width: 10px
+            margin: 2.5px
+            border-radius: 100000px
             opacity: 0.25
             transition: opacity 0.1s linear
+            display: inline-block
+            background-color: $accent
             cursor: pointer
 
             &:hover
@@ -54,19 +54,20 @@
         position: absolute
         top: 50%
         right: 1.5%
-        background-color: $accent
-        font-size: 20px
-        width: 1em
         height: 3em
-        font-weight: bold
-        font-family: sans-serif
-        transform: translateY(-50%)
-        line-height: 3em
-        box-sizing: border-box
+        width: 1em
         padding: 0 0.2em
-        cursor: pointer
         opacity: 0.5
         transition: opacity 0.1s linear
+        transform: translateY(-50%)
+        line-height: 3em
+        font-size: 20px
+        font-weight: bold
+        font-family: sans-serif
+        background-color: $accent
+        box-sizing: border-box
+        cursor: pointer
+        
 
     &__next:hover::after, &__previous:hover::after
         opacity: 1

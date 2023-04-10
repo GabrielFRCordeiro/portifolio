@@ -1,12 +1,11 @@
 @import ../abstract/_fonts.sass
-@import ../abstract/_variables.sass
 
 .about-me
+    margin: 16px
     display: grid
     grid-template-areas: 'picture text'
-    justify-content: space-evenly
     grid-column-gap: 16px
-    margin: 16px
+    justify-content: space-evenly
 
     @media screen
         @media (min-width: 600px)
@@ -16,36 +15,36 @@
             margin: 32px 128px
 
     &__picture
-        height: 128px
         grid-area: picture
+        height: 128px
         border-radius: 10px
 
     &__text
         grid-area: text
-        display: grid
-        grid-template-rows: 30% 60% 10%
         margin-top: 1%
         letter-spacing: 1px
+        display: grid
+        grid-template-rows: 30% 60% 10%
 
         &__heading
-            color: $compliment
-            font-family: 'Hind'
             font-size: 1.5em
+            font-family: 'Hind'
+            color: $compliment
             text-align: center
         
         &__summary
-            color: $compliment
-            font-family: 'Hind'
             font-size: .7em
             font-weight: 500
+            font-family: 'Hind'
+            color: $compliment
         
         &__click
             text-decoration: none
 
             &__more
-                color: $accent
-                font-family: 'Hind'
                 font-size: .6em
+                font-family: 'Hind'
+                color: $accent
                 text-align: end
 
 @media screen
