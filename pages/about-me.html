@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="../img/favicon_io/site.webmanifest">
+
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/style.css">
+    <title>About Me</title>
+</head>
+<body>
+    <header class="banner">
+        <a href="../index.html" class="banner__logo"><img src="../img/gabriel-cordeiro-front-end.svg" alt="Gabriel Cordeiro Front-End" class="banner__logo__icon"></a>
+        <div class="banner__social-media">
+            <a href="https://github.com/GabrielFRCordeiro"><img src="../img/github-logo.svg" alt="Meu GitHub" class="banner__social-media__icon"></a>
+            <a href="https://www.linkedin.com/in/gabrielfrcordeiro/"><img src="../img/linkedin-logo.svg" alt="Meu LinkedIn" class="banner__social-media__icon"></a>
+        </div>
+    </header>
+
+    <main class="my-history">
+        <h1 class="my-history__heading">About Me</h1>
+        <p class="my-history__paragraph">Back in school, I liked logic problems a lot. I loved it so much that I'd even participate in math and physics olympics. At the time, people close to me said to work with programming, because it involved the use of logic.</p>
+        <p class="my-history__paragraph">Instead of searching about the area, I decided to not go in this way. Even though I liked logic, I also loved using my creativity and thought programming wouldn't let me use it.</p>
+        <p class="my-history__paragraph">What I wanted was to be an actor and no one could change my mind. I took acting classes and worked in the area for a while. Being an actor is great and I don't want to stop doing it, but recently I started to feel that something was missing.</p>
+        <p class="my-history__paragraph">I didn't realized immediately what it was, until one day when I started to mess with the html of a site for fun and noticed that I was programming and being creative at the same time.</p>
+        <p class="my-history__paragraph">Once I came to this conclusion, I finally researched about the area and discovered the front-end. I studied HTML and CSS, then JavaScript and then ReactJS. I finally found a profession to use both my logic and my creativity, and I'm more than excited to build my next front-end project!</p>
+
+        <div class="skills-and-certificates__certificates certificates-carousel certificates">
+            <div class="certificates-carousel__inner">
+                <img src="../img/javascript-codecamp-certificate.svg" alt="JavaScript codecamp certificate">
+                <img src="../img/react-certificate.svg" alt="React certificate">
+                <img src="../img/ux-certificate.svg" alt="UX certificate">
+                <img src="../img/javascript-certificate.svg" alt="JavaScript certificate">
+                <img src="../img/html-css-certificate.svg" alt="HTML and CSS certificate">
+            </div>
+            <div class="certificates-carousel__bubbles"></div>
+            <div class="certificates-carousel__previous"></div>
+            <div class="certificates-carousel__next"></div>
+        </div>
+    </main>
+    
+    <form action="" class="contact-me">
+        <h1 class="contact-me__heading">Contact Me</h1>
+        <p class="contact-me__summary">Thanks for choosing me! Please use this space to tell me more about you and your project!</p>
+        
+        <label for="name" class="contact-me__label">Name:</label>
+        <input type="text" name="" id="name" placeholder="ex: Gabriel Cordeiro" required class="contact-me__input">
+        
+        <label for="email" class="contact-me__label">E-mail:</label>
+        <input type="email" name="" id="email" placeholder="ex: email@example.com" required class="contact-me__input">
+
+        <label for="message" class="contact-me__label">Message:</label>
+        <textarea name="message" id="message" cols="40" rows="5" placeholder="Write what you want me to do for you and your project!" required class="contact-me__input" maxlength="254"></textarea>
+
+        <input type="button" value="SEND" class="contact-me__button" id="button">
+    </form>
+
+    <script src="../js/certificates-carousel.js"></script>
+    <script type="text/javascript"
+        src="../https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("Qyxr91oFJmWWrzIsN");
+        })();
+    </script>
+    <script src="../js/send-email.js"></script>
+</body>
+</html>

@@ -255,6 +255,10 @@ body {
   left: 1.5%;
 }
 
+.certificates {
+  margin-bottom: 32px;
+}
+
 .contact-me {
   position: absolute;
   width: 100%;
@@ -357,6 +361,7 @@ body {
   height: 26px;
   background-color: #E89B25;
   color: #002A59;
+  cursor: pointer;
 }
 @media screen and (min-width: 480px) {
   .notification {
@@ -365,5 +370,30 @@ body {
   }
   .notification__message {
     font-size: 2em;
+  }
+}
+
+.my-history {
+  font-family: "Hind";
+  color: #002A59;
+  letter-spacing: 1px;
+}
+.my-history__heading {
+  text-align: center;
+  font-size: 2em;
+  margin: 16px;
+}
+.my-history__paragraph {
+  font-size: 1em;
+  margin: 16px;
+}
+@media screen and (min-width: 480px) {
+  .my-history__heading {
+    font-size: 3em;
+    margin: 32px;
+  }
+  .my-history__paragraph {
+    font-size: 2em;
+    margin: 32px;
   }
 }/*# sourceMappingURL=style.css.map */
