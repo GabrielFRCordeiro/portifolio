@@ -24,16 +24,16 @@
         margin-top: 1%
         letter-spacing: 1px
         display: grid
-        grid-template-rows: 30% 60% 10%
+        grid-template-rows: 25% 60% 15%
 
         &__heading
-            font-size: 1.5em
+            font-size: 30px
             font-family: 'Hind'
             color: $compliment
             text-align: center
         
         &__summary
-            font-size: .7em
+            font-size: 14px
             font-weight: 500
             font-family: 'Hind'
             color: $compliment
@@ -42,7 +42,7 @@
             text-decoration: none
 
             &__more
-                font-size: .6em
+                font-size: 12px
                 font-family: 'Hind'
                 color: $accent
                 text-align: end
@@ -53,27 +53,29 @@
             height: 226px
 
         .about-me__text
+            grid-template-rows: 30% 60% 10%
     
             &__heading
-                font-size: 2.5em
+                font-size: 50px
 
             &__summary
-                font-size: 1.3em
+                font-size: 22px
 
             &__click__more
-                font-size: .7em
+                font-size: 14px
     
     @media (min-width: $large-break)
         .about-me__picture
             height: 388px
 
         .about-me__text
+            grid-template-rows: 30% 65% 5%
     
             &__heading
-                font-size: 3.5em
+                font-size: 70px
 
             &__summary
-                font-size: 2em
+                font-size: 40px
 
             &__click__more
-                font-size: 1em
+                font-size: 20px

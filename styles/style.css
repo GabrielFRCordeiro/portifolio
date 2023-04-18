@@ -42,7 +42,7 @@ body {
 }
 @font-face {
   font-family: "Hind";
-  src: url(../../fonts/Hind-Light.ttf);
+  src: url(../fonts/Hind-Light.ttf);
 }
 .about-me {
   margin: 16px;
@@ -71,16 +71,16 @@ body {
   margin-top: 1%;
   letter-spacing: 1px;
   display: grid;
-  grid-template-rows: 30% 60% 10%;
+  grid-template-rows: 25% 60% 15%;
 }
 .about-me__text__heading {
-  font-size: 1.5em;
+  font-size: 30px;
   font-family: "Hind";
   color: #002A59;
   text-align: center;
 }
 .about-me__text__summary {
-  font-size: 0.7em;
+  font-size: 14px;
   font-weight: 500;
   font-family: "Hind";
   color: #002A59;
@@ -89,7 +89,7 @@ body {
   text-decoration: none;
 }
 .about-me__text__click__more {
-  font-size: 0.6em;
+  font-size: 12px;
   font-family: "Hind";
   color: #E89B25;
   text-align: end;
@@ -99,28 +99,34 @@ body {
   .about-me__picture {
     height: 226px;
   }
+  .about-me__text {
+    grid-template-rows: 30% 60% 10%;
+  }
   .about-me__text__heading {
-    font-size: 2.5em;
+    font-size: 50px;
   }
   .about-me__text__summary {
-    font-size: 1.3em;
+    font-size: 22px;
   }
   .about-me__text__click__more {
-    font-size: 0.7em;
+    font-size: 14px;
   }
 }
 @media screen and (min-width: 992px) {
   .about-me__picture {
     height: 388px;
   }
+  .about-me__text {
+    grid-template-rows: 30% 65% 5%;
+  }
   .about-me__text__heading {
-    font-size: 3.5em;
+    font-size: 70px;
   }
   .about-me__text__summary {
-    font-size: 2em;
+    font-size: 40px;
   }
   .about-me__text__click__more {
-    font-size: 1em;
+    font-size: 20px;
   }
 }
 .skills-and-certificates {
